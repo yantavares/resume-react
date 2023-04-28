@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body {
+  background-color: rgb(80, 78, 78);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  position: relative;
+  background-color: black;
   display: flex;
-  flex-direction: column;
+  justify-items: center;
   align-items: center;
+
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  height: 10em;
 }
 
-.App-link {
-  color: #61dafb;
+.welcome-msg {
+  background-image: linear-gradient(90deg, #3c65d8, #709df7, #7ed4fd);
+  background-clip: text;
+  --webkit-background-clip: text;
+
+  color: transparent;
+
+  font-family: "Pacifico", cursive;
+  margin: 0;
+  display: flex;
+  font-size: 60px;
+  font-weight: 400;
+  text-align: center;
+  max-width: 650px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.welcome-link {
+  color: rgb(163, 154, 154);
+  margin-top: 35px;
+  margin-left: 5px;
+}
+
+.welcome-style-left {
+  left: 0;
+  position: absolute;
+  color: #ffffff;
+  height: 10em;
+  width: 10em;
+  background-color: #000000;
+  transform: rotate(45deg);
+  transform-origin: left;
+}
+
+.welcome-style-right {
+  transform: rotate(45deg);
+  transform-origin: right;
+  right: 0;
+  position: absolute;
+  height: 10em;
+  width: 10em;
+  background-color: #ffffff;
 }
