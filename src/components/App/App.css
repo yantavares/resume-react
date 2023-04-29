@@ -4,24 +4,6 @@ body {
   background-color: rgb(80, 78, 78);
 }
 
-.header {
-  position: relative;
-  background-color: black;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-
-  justify-content: center;
-  align-content: center;
-  height: 10em;
-}
-
-.welcome-border {
-  background-image: linear-gradient(90deg, #375dc3, #709df7, #80d7ff);
-
-  height: 3px;
-}
-
 .hs {
   background-image: linear-gradient(90deg, #375dc3, #709df7, #80d7ff);
   background-clip: text;
@@ -36,17 +18,7 @@ body {
   font-size: 1.5rem;
 }
 
-.welcome-msg {
-  font-size: 60px;
-}
-
-.welcome-link {
-  color: rgb(163, 154, 154);
-  margin-top: 35px;
-  margin-left: 5px;
-}
-
-.icon {
-  margin-right: 8px;
-  margin-top: 22px;
+.buttons {
+  display: flex;
+  justify-content: center;
 }

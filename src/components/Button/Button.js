@@ -1,5 +1,18 @@
 import "./Button.css";
-function Button() {
-  return <button className="btn hs">About me</button>;
+function Button({ setIsSet, msg, state }) {
+  return (
+    <>
+      <button
+        onClick={() => {
+          setIsSet((prev) => {
+            return prev === state ? 0 : state;
+          });
+        }}
+        className="btn hs"
+      >
+        {msg}
+      </button>
+    </>
+  );
 }
 export default Button;

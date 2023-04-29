@@ -1,27 +1,24 @@
 import "./App.css";
 import Button from "../Button/Button.js";
-
-import { faReact } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Header from "../Header/Header";
+import About from "../About/About";
+import { useState } from "react";
+import Projects from "../Projects/Projects";
+import Links from "../Links/Links";
 
 function App() {
+  const [isSet, setIsSet] = useState(0);
   return (
-    <div className="App">
-      <header className="header">
-        <FontAwesomeIcon
-          className="icon"
-          icon={faReact}
-          spin
-          size="3x"
-          style={{ color: "#5d89e2" }}
-        />
-        <h1 className="welcome-msg hs">yantavares</h1>
-      </header>
-      <div className="welcome-border"></div>
-
-      <section className="about">
-        <Button />
+    <div className="app">
+      <Header />
+      <section className="buttons">
+        <Button setIsSet={setIsSet} msg={"About"} state={1} />
+        <Button setIsSet={setIsSet} msg={"Projects"} state={2} />
+        <Button setIsSet={setIsSet} msg={"Links"} state={3} />
       </section>
+      {isSet === 1 && <About />}
+      {isSet === 2 && <Projects />}
+      {isSet === 3 && <Links />}
     </div>
   );
 }
