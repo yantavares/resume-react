@@ -12,9 +12,9 @@ function App() {
     <div className="app">
       <Header />
       <section className="buttons">
-        <Button setIsSet={setIsSet} msg={"About"} state={1} />
-        <Button setIsSet={setIsSet} msg={"Projects"} state={2} />
-        <Button setIsSet={setIsSet} msg={"Links"} state={3} />
+        <Button isSet={isSet} setIsSet={setIsSet} msg={"About"} state={1} />
+        <Button isSet={isSet} setIsSet={setIsSet} msg={"Projects"} state={2} />
+        <Button isSet={isSet} setIsSet={setIsSet} msg={"Links"} state={3} />
       </section>
       {isSet === 1 && <About />}
       {isSet === 2 && <Projects />}
