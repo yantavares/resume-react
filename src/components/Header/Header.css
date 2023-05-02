@@ -25,7 +25,7 @@
 
 .welcome-msg:hover {
   transform: scale(90%);
-  background-position: 350px;
+  background-position: 3ch;
 }
 
 .welcome-link {

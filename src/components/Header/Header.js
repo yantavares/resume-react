@@ -13,7 +13,11 @@ function Header() {
           size="3x"
           style={{ color: "#5d89e2" }}
         />
-        <a href="https://github.com/yantavares" className="welcome-msg hs">
+        <a
+          target="_blank"
+          href="https://github.com/yantavares"
+          className="welcome-msg hs"
+        >
           yantavares
         </a>
       </header>
