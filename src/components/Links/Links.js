@@ -1,4 +1,6 @@
+import "./Links.css";
+
 function Links() {
-  return <div>Links</div>;
+  return <div className="links-text">Links</div>;
 }
 export default Links;

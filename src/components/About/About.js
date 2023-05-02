@@ -1,10 +1,8 @@
 import "./About.css";
 
+import "./About.css";
+
 function About() {
-  return (
-    <div>
-      <p className="about"></p> About
-    </div>
-  );
+  return <div className="about-text">About Text</div>;
 }
 export default About;

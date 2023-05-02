@@ -1,4 +1,5 @@
+import "./Projects.css";
 function Projects() {
-  return <div>Projects</div>;
+  return <div className="projects-text">Projects</div>;
 }
 export default Projects;

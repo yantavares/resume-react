@@ -18,13 +18,13 @@
 
 .welcome-msg {
   font-size: 60px;
-  transition: all 500ms ease-in-out;
+  transition: all 420ms ease-in-out;
   cursor: pointer;
   width: 350px;
 }
 
 .welcome-msg:hover {
-  transform: scale(90%);
+  transform: scale(85%);
   background-position: 3ch;
 }
 
@@ -37,4 +37,5 @@
 .icon {
   margin-right: 8px;
   margin-top: 22px;
+  background-color: black;
 }

@@ -6,7 +6,6 @@ import { useState } from "react";
 import Projects from "../Projects/Projects";
 import Links from "../Links/Links";
 import waves from "../../images/layered-waves-haikei.svg";
-
 function App() {
   const [isSet, setIsSet] = useState(0);
   return (
