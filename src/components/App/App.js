@@ -5,6 +5,7 @@ import About from "../About/About";
 import { useState } from "react";
 import Projects from "../Projects/Projects";
 import Links from "../Links/Links";
+import waves from "../../images/layered-waves-haikei.svg";
 
 function App() {
   const [isSet, setIsSet] = useState(0);
@@ -19,6 +20,10 @@ function App() {
       {isSet === 1 && <About />}
       {isSet === 2 && <Projects />}
       {isSet === 3 && <Links />}
+
+      <footer>
+        <img className="footer-img" src={waves} alt="waves" />
+      </footer>
     </div>
   );
 }

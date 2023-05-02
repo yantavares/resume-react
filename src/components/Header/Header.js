@@ -13,7 +13,9 @@ function Header() {
           size="3x"
           style={{ color: "#5d89e2" }}
         />
-        <h1 className="welcome-msg hs">yantavares</h1>
+        <a href="https://github.com/yantavares" className="welcome-msg hs">
+          yantavares
+        </a>
       </header>
       <div className="welcome-border"></div>
     </>

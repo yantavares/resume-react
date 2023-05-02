@@ -18,6 +18,14 @@
 
 .welcome-msg {
   font-size: 60px;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+  width: 350px;
+}
+
+.welcome-msg:hover {
+  transform: scale(90%);
+  background-position: 350px;
 }
 
 .welcome-link {
