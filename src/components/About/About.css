@@ -1,5 +1,24 @@
-.about-text {
-  background-color: aliceblue;
-  height: 50vh;
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.about {
+  margin: 3rem;
+  padding: 5rem;
+  padding-top: 1rem;
+  border-top-right-radius: 60%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 38%;
+  border-bottom-right-radius: 40%;
+  background-image: linear-gradient(45deg, rgb(163, 163, 211), beige);
+  height: 30vh;
+  width: 30%;
   color: black;
+}
+
+.btn-translate {
+  background-color: gray;
+  padding: 5px;
 }

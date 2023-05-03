@@ -20,7 +20,6 @@ function Header() {
       </div>
       <p id="easter-egg"> Click me!</p>
       <img id="gopher" src={gopher} alt="gopher" />
-      <div class="eye"></div>
       <div className="welcome-border"></div>
     </header>
   );
