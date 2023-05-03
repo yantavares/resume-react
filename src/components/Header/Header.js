@@ -4,8 +4,8 @@ import "./Header.css";
 
 function Header() {
   return (
-    <>
-      <header className="header">
+    <header>
+      <div className="header-msg">
         <FontAwesomeIcon
           className="icon"
           icon={faReact}
@@ -20,9 +20,10 @@ function Header() {
         >
           yantavares
         </a>
-      </header>
+      </div>
+      <p id="easter-egg"> Click me!</p>
       <div className="welcome-border"></div>
-    </>
+    </header>
   );
 }
 export default Header;

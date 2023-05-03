@@ -1,18 +1,29 @@
-.header {
-  position: relative;
+header {
   background-color: black;
+}
+
+.header-msg {
+  background-color: black;
+  position: relative;
   display: flex;
   justify-items: center;
   align-items: center;
-
+  transition: all 420ms ease-in-out;
   justify-content: center;
   align-content: center;
-  height: 10em;
+  padding-top: 30px;
+}
+
+#easter-egg {
+  transition: all 420ms ease-in-out;
+  background-color: transparent;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .welcome-border {
   background-image: linear-gradient(90deg, #375dc3, #709df7, #80d7ff);
-
   height: 3px;
 }
 
@@ -21,11 +32,21 @@
   transition: all 420ms ease-in-out;
   cursor: pointer;
   width: 350px;
+  margin: 0;
+  padding: 0;
 }
 
 .welcome-msg:hover {
-  transform: scale(85%);
   background-position: 3ch;
+}
+
+.header-msg:hover {
+  transform: scale(90%);
+}
+
+.header-msg:hover + #easter-egg {
+  transform: translateY(-55%);
+  color: #80d7ff;
 }
 
 .welcome-link {
@@ -36,6 +57,7 @@
 
 .icon {
   margin-right: 8px;
-  margin-top: 22px;
+  margin-top: 1.3rem;
   background-color: black;
+  cursor: pointer;
 }
