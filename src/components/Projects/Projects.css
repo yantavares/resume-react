@@ -1,5 +1,13 @@
-.projects-text {
-  background-color: aliceblue;
-  height: 50vh;
-  color: black;
+.projects {
+  margin-top: 2rem;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.loading {
+  font-size: 10rem;
 }
