@@ -7,9 +7,6 @@ function Eye() {
   const eyeLeft = useRef();
   const eyeRight = useRef();
 
-  const eyeBrowLeft = useRef();
-  const eyeBrowRight = useRef();
-
   function calcAngle(element) {
     if (!element.current) return;
 
@@ -24,11 +21,6 @@ function Eye() {
 
   const handleMouseMove = (event) => {
     setMouseCoordinates({ x: event.clientX, y: event.clientY });
-
-    eyeBrowLeft.current.style.transform = `translateY(${event.clientY / 50}px)`;
-    eyeBrowRight.current.style.transform = `translateY(${
-      event.clientY / 50
-    }px)`;
   };
 
   useEffect(() => {
@@ -41,10 +33,7 @@ function Eye() {
 
   return (
     <div className="Eye">
-      <div className="eyebrow_container">
-        <div ref={eyeBrowLeft} className="eye_brow left"></div>
-        <div ref={eyeBrowRight} className="eye_brow right"></div>
-      </div>
+      <div className="eyebrow_container"></div>
       <div className="eye_container">
         <div
           ref={eyeLeft}

@@ -1,43 +1,14 @@
-body {
-  margin: 0;
-  padding: 0;
-  background: #ed213a;
-  background: -webkit-linear-gradient(to right, #93291e, #ed213a);
-  background: linear-gradient(to right, #93291e, #ed213a);
-}
-
-.App {
-  height: 100vh;
-  display: flex;
+.Eye {
+  // height: 100vh;
+  // display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 60px;
 
-  .eyebrow_container {
-    display: flex;
-    gap: 350px;
-
-    .eye_brow {
-      width: 180px;
-      height: 20px;
-      border-radius: 10px;
-      background-color: #000;
-    }
-
-    .left {
-      rotate: -20deg;
-      border-bottom-left-radius: 0px;
-      border-top-left-radius: 90px;
-    }
-    .right {
-      rotate: 20deg;
-      border-bottom-right-radius: 0px;
-      border-top-right-radius: 90px;
-    }
-  }
 
   .eye_container {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,7 +50,7 @@ body {
         height: 30px;
         background: #000;
         border-radius: 50%;
-        border: 20px solid #2e536f;
+        border: 15px solid black;
         pointer-events: none;
         transition: 0.5s;
       }
