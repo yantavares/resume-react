@@ -1,6 +1,7 @@
 import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Header.css";
+import gopher from "../../images/gopher.png";
 
 function Header() {
   return (
@@ -13,15 +14,12 @@ function Header() {
           size="3x"
           style={{ color: "#5d89e2" }}
         />
-        <a
-          target="_blank"
-          href="https://github.com/yantavares"
-          className="welcome-msg hs"
-        >
+        <a href="https://github.com/yantavares" className="welcome-msg hs">
           yantavares
         </a>
       </div>
       <p id="easter-egg"> Click me!</p>
+      <img id="gopher" src={gopher} alt="gopher" />
       <div className="welcome-border"></div>
     </header>
   );
