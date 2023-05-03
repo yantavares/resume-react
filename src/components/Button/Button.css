@@ -5,9 +5,9 @@
   border-radius: 7px;
   border: 1px solid rgb(61, 106, 255);
   font-size: 14px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   background: transparent;
   color: #fff;
   overflow: hidden;

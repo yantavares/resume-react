@@ -15,7 +15,7 @@ const Projects = () => {
         const resp = await fetch(url);
         const projects = await resp.json();
         setProject(projects);
-        console.log(projects);
+
         setIsLoading(false);
       } catch (error) {
         console.log(error);
@@ -26,7 +26,7 @@ const Projects = () => {
   }, []);
 
   if (isLoading) {
-    return <h2 className="loading">Loading...</h2>;
+    return <div className="custom-loader"></div>;
   }
 
   if (isError) {
