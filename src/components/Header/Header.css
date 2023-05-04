@@ -1,6 +1,11 @@
+body {
+  min-width: 75rem;
+}
+
 header {
   background-color: black;
   position: relative;
+  width: 100%;
 }
 
 .header-msg {
@@ -20,6 +25,7 @@ header {
   background-color: transparent;
   text-align: center;
   margin: 0 auto;
+  background-color: black;
   margin-bottom: 20px;
 }
 
@@ -48,10 +54,6 @@ header {
 .header-msg:hover + #easter-egg {
   transform: translateY(-55%);
   color: #80d7ff;
-}
-
-.header-msg:hover + #gopher {
-  opacity: 0;
 }
 
 .welcome-link {

@@ -6,6 +6,13 @@ h2,
 .btn {
   font-family: "Paytone One", sans-serif;
 }
+p {
+  text-align: center;
+}
+
+a {
+  color: black;
+}
 .hs {
   background-image: linear-gradient(90deg, #375dc3, #709df7, #80d7ff);
   background-clip: text;

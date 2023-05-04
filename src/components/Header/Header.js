@@ -10,7 +10,7 @@ function Header() {
         <FontAwesomeIcon
           className="icon"
           icon={faReact}
-          spin
+          // spin
           size="3x"
           style={{ color: "#5d89e2" }}
         />
