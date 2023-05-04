@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./About.css";
+import unb from "../../images/UnB.png";
 
 function About() {
   const [isActive, setIsActive] = useState(0);
@@ -9,23 +10,23 @@ function About() {
         <div className="buttons">
           <button
             className={
-              isActive === 0
+              !isActive
                 ? "btn btn-active btn-translate"
-                : "btn btn-translate"
+                : "btn btn-translate btn-translate-not-active"
             }
             onClick={() => setIsActive(0)}
           >
-            pt/br
+            🇧🇷 pt/br
           </button>
           <button
             className={
-              isActive === 1
+              isActive
                 ? "btn btn-active btn-translate"
-                : "btn btn-translate"
+                : "btn btn-translate btn-translate-not-active"
             }
             onClick={() => setIsActive(1)}
           >
-            en/us
+            en/us 🇺🇸
           </button>
         </div>
         {isActive === 0 && (

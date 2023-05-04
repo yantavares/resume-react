@@ -1,5 +1,5 @@
 .projects {
-  transition: all 1000ms ease-in-out;
+  /* transition: all 1000ms ease-in-out; */
   margin-top: 2rem;
   justify-content: center;
   display: flex;

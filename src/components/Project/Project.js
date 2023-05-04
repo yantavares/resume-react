@@ -22,11 +22,19 @@ function Project({ name, description, html_url, owner }) {
                 src={owner.avatar_url}
                 alt="avatar"
               />
-              <h3>{owner.login}</h3>
+              <div className="owner-name">
+                <h3 style={{ color: "bisque" }}>Owner:</h3>
+                <h3 style={{ color: "beige" }}>me</h3>
+              </div>
             </div>
 
-            <button className="btn btn-gh" target="_blank" href={html_url}>
-              See on Github{" "}
+            <button
+              className="btn btn-gh"
+              onClick={() => {
+                window.open(html_url);
+              }}
+            >
+              See on Github
               <FontAwesomeIcon className="gh" icon={faGithub} size="2x" />
             </button>
           </div>
