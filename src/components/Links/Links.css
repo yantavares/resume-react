@@ -136,3 +136,10 @@
   height: fit-content;
   cursor: pointer;
 }
+
+.email-address {
+  border: 2px solid #25aabb;
+  padding: 8px;
+  height: max-content;
+  border-radius: 1rem;
+}

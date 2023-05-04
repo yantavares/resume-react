@@ -31,7 +31,7 @@ function Links() {
           </a>
         </div>
         <div className="email">
-          <p>yantdo1@gmail.com</p>
+          <p className="email-address">yantdo1@gmail.com</p>
           <button
             className="btn btn-gh btn-em"
             onClick={() => navigator.clipboard.writeText("yantdo1@gmail.com")}
