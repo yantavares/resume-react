@@ -5,16 +5,19 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import yan from "../../images/yan.png";
 
 function Links() {
   return (
     <div className="links">
       <div class="card-client">
-        <div class="user-picture"></div>
+        <div className="user-picture">
+          <img src={yan} alt="yan (me)" />
+        </div>
         <p class="name-client">
           {" "}
           Yan Tavares de Oliveira
-          <span>Engenharia da Computação</span>
+          <span>Computer Engineering</span>
         </p>
         <div class="social-media">
           <a href="https://github.com/yantavares">

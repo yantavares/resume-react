@@ -1,12 +1,14 @@
 .about-container {
   padding-top: 2rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   gap: 3rem;
 }
 
 .about {
+  transition: all 1000ms ease-in-out;
   width: 50%;
   height: fit-content;
   padding: 1rem;
@@ -36,7 +38,7 @@
 
 .about-2 {
   display: flex;
-  margin-top: 3rem;
+  align-self: center;
   height: 10rem;
   width: 10rem;
   align-items: center;
@@ -50,13 +52,14 @@
 }
 
 .about-3 {
-  margin-top: 3rem;
   height: 10rem;
   width: 10rem;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  align-self: center;
+  margin-bottom: 5rem;
 }
 
 .devicon {
