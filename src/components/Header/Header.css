@@ -77,4 +77,10 @@ header {
   width: 5rem;
   opacity: 1;
   background-color: black;
+  transition: all 200ms ease-in-out;
+}
+
+#gopher:hover {
+  opacity: 0;
+  cursor: pointer;
 }
