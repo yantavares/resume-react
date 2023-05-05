@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./About.css";
 import unb from "../../images/UnB.png";
 import DevIcon from "devicon-react-svg";
+import brazil from "../../images/brazil.png";
+import usa from "../../images/usa.png";
 
 function About() {
   const [isActive, setIsActive] = useState(1);
@@ -36,6 +38,15 @@ function About() {
       </div>
       <div className="about">
         <div className="buttons">
+          <img
+            style={{
+              height: "22px",
+              alignSelf: "center",
+              justifySelf: "center",
+            }}
+            src={usa}
+            alt=""
+          />
           <button
             className={
               isActive === 1
@@ -44,8 +55,9 @@ function About() {
             }
             onClick={() => setIsActive(1)}
           >
-            en/us 🇺🇸
+            en/us
           </button>
+
           <button
             className={
               isActive === 0
@@ -54,8 +66,17 @@ function About() {
             }
             onClick={() => setIsActive(0)}
           >
-            🇧🇷 pt/br
+            pt/br
           </button>
+          <img
+            style={{
+              height: "22px",
+              alignSelf: "center",
+              justifySelf: "center",
+            }}
+            src={brazil}
+            alt=""
+          />
         </div>
         {isActive === 0 && (
           <>
