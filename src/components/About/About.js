@@ -62,9 +62,8 @@ function About() {
             <p className="about-text">
               Sou estudante de Engenharia de Computação da Universidade de
               Brasília. Sou formado em inglês, morei por um ano na Califórnia e
-              já trabalhei como tradutor de inglês por muitos anos. Minhas
-              habilidades incluem programação, inglês, matemática, física e
-              música.
+              já trabalhei como tradutor de inglês. Minhas habilidades incluem
+              programação, inglês, matemática, física e música.
             </p>
             <p className="about-text">
               O presente site é um currículo feito com as ferramentas React.js,
@@ -78,8 +77,8 @@ function About() {
             <p className="about-text">
               I'm a Computer Engineering student at the University of Brasilia.
               I have a degree in English, I lived in California for a year and I
-              have worked as an English translator for many years. My skills
-              include programming, English, math, physics and music.
+              have worked as an English translator. My skills include
+              programming, English, math, physics and music.
             </p>
             <p>
               The present site is a curriculum made with React.js, HTML5, CSS3
