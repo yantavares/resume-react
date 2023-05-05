@@ -122,7 +122,8 @@
 .btn-em {
   margin: 0;
   letter-spacing: 0;
-  padding: 4px;
+  padding: 8px;
+  border-radius: 1rem;
   width: fit-content;
   height: fit-content;
   cursor: pointer;
