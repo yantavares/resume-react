@@ -59,7 +59,7 @@
 
 .social-media a {
   position: relative;
-  margin-right: 15px;
+  margin-right: 20px;
   text-decoration: none;
   color: inherit;
 }
@@ -69,7 +69,7 @@
 }
 
 .social-media a svg {
-  width: 1.1rem;
+  width: 2rem;
   fill: currentColor;
 }
 
