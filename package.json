@@ -21,7 +21,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build-page": "PUBLIC_URL=https://yantavares.github.io/resume-react/ react-scripts build"
   },
   "eslintConfig": {
     "extends": [
