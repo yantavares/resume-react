@@ -6,7 +6,6 @@ const url = "https://api.github.com/users/yantavares/repos";
 const Projects = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
-
   const [projects, setProject] = useState(null);
 
   useEffect(() => {
@@ -43,6 +42,7 @@ const Projects = () => {
             description={project.description}
             html_url={project.html_url}
             owner={project.owner}
+            isForked={project.fork}
           />
         );
       })}

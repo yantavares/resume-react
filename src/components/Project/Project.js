@@ -2,8 +2,25 @@ import React from "react";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Project.css";
+import { useEffect, useState } from "react";
 
-function Project({ name, description, html_url, owner }) {
+function Project({ name, description, html_url, owner, isForked }) {
+  const [ownerName, setOwnerName] = useState("");
+
+  useEffect(() => {
+    if (owner.login === "yantavares") {
+      setOwnerName("me");
+    } else {
+      setOwnerName(owner.login);
+    }
+  }, [owner]);
+
+  useEffect(() => {
+    if (isForked && !ownerName.includes("(forked)")) {
+      setOwnerName(ownerName + " (forked)");
+    }
+  }, [isForked, ownerName]);
+
   return (
     <div className="card-container">
       <div className="flip-card">
@@ -22,7 +39,7 @@ function Project({ name, description, html_url, owner }) {
               />
               <div className="owner-name">
                 <h3 style={{ color: "bisque" }}>Owner:</h3>
-                <h3 style={{ color: "beige" }}>me</h3>
+                <h3 style={{ color: "beige" }}>{ownerName}</h3>
               </div>
             </div>
 
