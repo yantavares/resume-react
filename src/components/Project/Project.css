@@ -65,6 +65,8 @@
   background-image: linear-gradient(120deg, #375dc3, #80d7ff);
   color: black;
   transform: rotateY(180deg);
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
 }
 
 .owner-name {
@@ -101,4 +103,8 @@
   color: whitesmoke;
   border: 1px solid whitesmoke;
   transition: all 500ms ease-in-out;
+}
+
+.small {
+  font-weight: 400;
 }

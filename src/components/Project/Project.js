@@ -13,9 +13,7 @@ function Project({ name, description, html_url, owner }) {
             <p>Hover Me</p>
           </div>
           <div className="flip-card-back">
-            <p className="title small">
-              {description || "No description provided"}
-            </p>
+            <p className="small">{description || "No description provided"}</p>
             <div className="owner">
               <img
                 style={{ width: "2rem", height: "2rem" }}
