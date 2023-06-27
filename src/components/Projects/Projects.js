@@ -28,24 +28,35 @@ const Projects = () => {
     return <div className="custom-loader"></div>;
   }
 
-  if (isError) {
-    return <h2>Error!</h2>;
+  if (
+    isError ||
+    projects.documentation_url ===
+      "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"
+  ) {
+    return (
+      <h2 style={{ margin: "0 5rem", color: "white" }}>
+        Github API reached maximum requisitions, try again later :/
+      </h2>
+    );
   }
+
+  console.log(projects);
 
   return (
     <div className="projects">
-      {projects.map((project) => {
-        return (
-          <Project
-            key={project.id}
-            name={project.name}
-            description={project.description}
-            html_url={project.html_url}
-            owner={project.owner}
-            isForked={project.fork}
-          />
-        );
-      })}
+      {projects &&
+        projects.map((project) => {
+          return (
+            <Project
+              key={project.id}
+              name={project.name}
+              description={project.description}
+              html_url={project.html_url}
+              owner={project.owner}
+              isForked={project.fork}
+            />
+          );
+        })}
     </div>
   );
 };
