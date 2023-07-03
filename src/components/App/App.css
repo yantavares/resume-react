@@ -36,6 +36,5 @@ a {
 .footer-img {
   width: 100%;
   position: fixed;
-  /* z-index: -1; */
-  bottom: 0;
+  bottom: -0.5rem;
 }
