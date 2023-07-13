@@ -1,14 +1,12 @@
 .about-container {
-  padding-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   gap: 3rem;
   margin-bottom: 5rem;
-  padding: 1rem;
   justify-content: center;
   justify-items: center;
-  height: 50vh;
+  padding: 6% 1rem;
 }
 
 .about {
