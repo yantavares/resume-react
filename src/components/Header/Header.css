@@ -37,6 +37,10 @@ header {
   width: 350px;
   margin: 0;
   padding: 0;
+
+  @media (max-width: 500px) {
+    font-size: 3rem;
+  }
 }
 
 .welcome-msg:hover {
