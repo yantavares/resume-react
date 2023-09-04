@@ -14,8 +14,8 @@
 .custom-loader {
   position: absolute;
   width: 50px;
-  left: 50%;
-  top: 50%;
+  left: calc(50% - 22px);
+  top: calc(50% - 22px);
   height: 50px;
   border-radius: 50%;
   background: radial-gradient(farthest-side, #090913 95%, #0000) 50% 1px/12px
